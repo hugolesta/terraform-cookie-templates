@@ -1,5 +1,5 @@
 {
-    "project_name": "infrastructure",
+    "project_name": "{{cookiecutter.project_name|lower}}",
     "namespace" : "Company",
     "tenant" : "H.R.H",
     "environment" : "dev",
