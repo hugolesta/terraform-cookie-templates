@@ -1,0 +1,11 @@
+{
+    "source" : "cloudposse/label/null",
+    "namespace" : "Company",
+    "tenant" : "H.R.H",
+    "evinronment" : "dev",
+    "stage" : "build",
+    "name" : "Some custom name",
+    "attributes" : ["fire", "water", "earth", "air"],
+    "label_order" : ["name", "tenant", "environment", "stage", "attributes"],
+    "city" : "H.R.H"
+}
