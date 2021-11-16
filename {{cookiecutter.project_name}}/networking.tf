@@ -1,5 +1,5 @@
 module "vpc" {
-  source     = "{{cookiecutter.modules.networking.vpc.source}}"
+  source     = "{{cookiecutter.vpc_source}}"
   namespace  = "{{cookiecutter.namespace}}"
   stage      = "{{cookiecutter.stage}}"
   name       = "{{cookiecutter.name}}"
@@ -9,7 +9,7 @@ module "vpc" {
 }
 
 module "subnets" {
-  source = "{{cookiecutter.modules.networking.subnets.source}}"
+  source = "{{cookiecutter.subnets_source}}"
 
   availability_zones       = var.vpc["availability_zones"]
   vpc_id                   = module.vpc.vpc_id

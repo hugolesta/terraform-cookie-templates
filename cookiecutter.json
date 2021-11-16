@@ -6,18 +6,8 @@
     "stage" : "build",
     "name" : "Some custom name",
     "city" : "H.R.H",
-    "modules": {
-        "networking" : {
-            "vpc" : {
-                "source": "git::https://github.com/cloudposse/terraform-aws-vpc.git?ref=tags/0.20.4"
-            },
-            "subnets" : {
-                "source": "git::https://github.com/cloudposse/terraform-aws-dynamic-subnets.git?ref=tags/0.37.6"
-            }
-        },
-        "label": {
-            "source" : "cloudposse/label/null"
-        }
-    }
+    "vpc_source": "git::https://github.com/cloudposse/terraform-aws-vpc.git?ref=tags/0.20.4",
+    "subnets_source": "git::https://github.com/cloudposse/terraform-aws-dynamic-subnets.git?ref=tags/0.37.6",
+    "labels_source": "cloudposse/label/null"
     
 }
