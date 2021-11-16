@@ -6,6 +6,5 @@
     "environment" : "dev",
     "stage" : "build",
     "name" : "Some custom name",
-    "label_order" : ["name", "tenant", "environment", "stage", "attributes"],
     "city" : "H.R.H"
 }

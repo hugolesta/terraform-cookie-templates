@@ -5,7 +5,6 @@ module "label1" {
   environment = "{{cookiecutter.environment}}"
   stage       = "{{cookiecutter.stage}}"
   name        = "{{cookiecutter.name}}"
-  label_order = "{{cookiecutter.label_order}}"
   tags = {
     "City" = "{{cookiecutter.city}}"
   }
