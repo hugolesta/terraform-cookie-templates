@@ -1,5 +1,5 @@
 module "label1" {
-  source      = "{{cookiecutter.source}}"
+  source      = "{{cookiecutter.modules.label.source}}"
   namespace   = "{{cookiecutter.namespace}}"
   tenant      = "{{cookiecutter.tenant}}"
   environment = "{{cookiecutter.environment}}"
