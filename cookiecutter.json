@@ -3,7 +3,7 @@
     "source" : "cloudposse/label/null",
     "namespace" : "Company",
     "tenant" : "H.R.H",
-    "evinronment" : "dev",
+    "environment" : "dev",
     "stage" : "build",
     "name" : "Some custom name",
     "label_order" : ["name", "tenant", "environment", "stage", "attributes"],
