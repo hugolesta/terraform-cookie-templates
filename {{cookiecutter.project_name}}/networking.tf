@@ -4,7 +4,6 @@ module "vpc" {
   stage      = "{{cookiecutter.stage}}"
   name       = "{{cookiecutter.name}}"
   cidr_block = var.vpc["cidr_block"]
-  tags       = module.tags.context
 
 }
 
@@ -18,6 +17,5 @@ module "subnets" {
   nat_gateway_enabled      = true
   aws_route_create_timeout = "5m"
   aws_route_delete_timeout = "10m"
-  tags                     = module.tags.context
 
 }

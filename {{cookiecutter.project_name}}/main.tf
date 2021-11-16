@@ -10,6 +10,13 @@ module "tags" {
   }
 }
 
-output "labels" {
-  value = module.tags.context
+output "tags" {
+  value = {
+    id        = module.tags.id
+    name      = module.tags.name
+    namespace = module.tags.namespace
+    stage     = module.tags.stage
+    tenant    = module.tags.tenant
+
+  }
 }
