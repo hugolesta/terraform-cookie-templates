@@ -9,3 +9,7 @@ module "label1" {
     "City" = "{{cookiecutter.city}}"
   }
 }
+
+output "labels" {
+  value = module.label1.context
+}
