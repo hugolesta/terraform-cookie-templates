@@ -1,4 +1,4 @@
-module "label1" {
+module "tags" {
   source      = "{{cookiecutter.labels_source}}"
   namespace   = "{{cookiecutter.namespace}}"
   tenant      = "{{cookiecutter.tenant}}"
@@ -11,5 +11,5 @@ module "label1" {
 }
 
 output "labels" {
-  value = module.label1.context
+  value = module.tags.context
 }
